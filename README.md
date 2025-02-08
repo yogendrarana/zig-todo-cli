@@ -1,0 +1,1 @@
+This is an implementation of simple todo app in cli using zig language!
