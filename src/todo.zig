@@ -13,7 +13,7 @@ pub const TodoList = struct {
     allocator: std.mem.Allocator,
 
     pub fn init(allocator: std.mem.Allocator) TodoList {
-        return TodoList{
+        return @This(){
             .items = std.ArrayList(TodoItem).init(allocator),
             .nextId = 1,
             .allocator = allocator,
